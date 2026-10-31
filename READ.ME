@@ -1,0 +1,55 @@
+# Hogwarts Course Management System
+
+Det er en backend til Hogwarts med huse, lærere, elever og kurser (man kan oprette, opdatere, hente data og slette data )
+
+1. Klon repository'et og installer afhængigheder:
+   ```bash
+   npm install
+
+Endpoints
+Houses
+GET /houses – Hent alle huse
+
+GET /houses/:id – Hent et specifikt hus
+
+Teachers
+GET /teachers – Hent alle lærere
+
+GET /teachers/:id – Hent en lærer ud fra ID
+
+POST /teachers – Opret ny lærer
+
+PUT /teachers/:id – Opdater en lærer
+
+DELETE /teachers/:id – Slet en lærer
+
+Students
+GET /students – Hent alle elever
+
+GET /students/:id – Hent en elev ud fra ID
+
+POST /students – Opret ny elev
+
+PUT /students/:id – Opdater en elev
+
+DELETE /students/:id – Slet en elev
+
+Courses
+GET /courses – Hent alle courses
+
+GET /courses/:id – Hent et course ud fra ID
+
+POST /courses – Opret et nyt course
+
+PUT /courses/:id – Opdater course
+
+DELETE /courses/:id – Slet course
+
+Opret en .env-fil i roden af projektet ved at tage udgangspunkt i .env.example, og tilføj dine egne databaseoplysninger.
+
+Kør SQL-scriptet i database.sql i din PostgreSQL-database (f.eks. via DBeaver eller pgAdmin) for at oprette tabeller og indsætte eksempeldata.
+
+Start serveren i udviklingstilstand:
+
+Bash
+npm run dev
